@@ -29,3 +29,14 @@ echo "num1 compute" ${compute[num1]}
 echo "num2 compute" ${compute[num2]}
 echo "num3 compute" ${compute[num3]}
 echo "num4 compute" ${compute[num4]}
+
+
+counter=0
+compute[ ( ( counter++) ) ]="$num1"
+compute[ ( ( counter++) ) ]="$num2"
+compute[ ( ( counter++) ) ]="$num3"
+compute[ ( ( counter++) ) ]="$num4"
+
+echo "$num1 $num2 $num3 $num4"
+echo "array of dictionary is: ${compute[@]}"
+
